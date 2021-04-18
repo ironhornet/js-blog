@@ -7,6 +7,7 @@ export class HeaderComponent extends Component {
     init(){
         if (localStorage.getItem('visited')){
             this.hide()
+            console.log('header init',this);
         }
         const btn = this.$el.querySelector('.js-header-start')
         btn.addEventListener('click', buttonHandler.bind(this) )

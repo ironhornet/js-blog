@@ -3,12 +3,14 @@ import {NavigationComponent} from './components/navigation.component'
 import {CreateComponent} from './components/create.component'
 import {FavoriteComponent} from './components/favorite.component'
 import {PostsComponent} from './components/posts.component'
+import { LoaderCompnent } from './components/loader.component'
 
 
  new HeaderComponent('header')
 
  const navigation = new NavigationComponent('navigation')
- const posts = new PostsComponent('posts')
+ const loader = new LoaderCompnent('loader')
+ const posts = new PostsComponent('posts', {loader})
  const create = new CreateComponent('create')
  const favorite = new FavoriteComponent('favorite')
  
