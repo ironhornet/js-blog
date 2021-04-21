@@ -12,7 +12,7 @@ import { LoaderCompnent } from './components/loader.component'
  const loader = new LoaderCompnent('loader')
  const posts = new PostsComponent('posts', {loader})
  const create = new CreateComponent('create')
- const favorite = new FavoriteComponent('favorite')
+ const favorite = new FavoriteComponent('favorite', {loader})
  
 
  navigation.registerTabs([
